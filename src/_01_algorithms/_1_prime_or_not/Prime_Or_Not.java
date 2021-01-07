@@ -13,5 +13,5 @@ public static void main(String[] args) {
 		}
 	}
 	JOptionPane.showMessageDialog(null, "The number " + num + " is a prime number.");
-}
+} //to save
 }
