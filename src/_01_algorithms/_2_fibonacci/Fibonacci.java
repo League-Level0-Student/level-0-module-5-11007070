@@ -8,9 +8,10 @@ public static void main(String[] args) {
 	System.out.println(number1);
 	System.out.println(number2);
 	for (int i = 0; i < 10; i++) {
-		//sum = number 1 + number 2;
-		//System.out.println(sum);
-		//to save
+		sum = number1 + number2;
+		System.out.println(sum);
+		number1 = number2;
+		number2 = sum;
 	}
 }
 }

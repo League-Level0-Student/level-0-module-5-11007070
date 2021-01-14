@@ -2,16 +2,38 @@ package _02_nested_loops._1_snowflake;
 
 import java.awt.Color;
 
+import org.jointheleague.graphical.robot.Robot;
+
 
 public class Snowflake {
 	
 	public static void main(String[] args) {
 
 		// #1. Make a new Robot
-
+		Robot robot = new Robot();
 
 		// #2. Set your robot’s position to x=300 and y=300
-
+		robot.moveTo(300, 300);
+		robot.penDown();
+		robot.setSpeed(5);
+		for (int i = 0; i < 6; i++) {
+			robot.setPenColor(Color.black);
+			robot.move(50);
+			robot.turn(60);
+			if (i % 2 == 0) {
+				robot.setPenColor(Color.blue);
+			}
+			else {
+				robot.setPenColor(Color.red);
+			}
+			
+			for (int j = 0; j < 6; j++) {
+				robot.turn(-60);
+				robot.move(50);
+			}
+			//robot.setPenColor(Color.black);
+		}
+		
 
 		// #3. Put the robot's pen down
 
@@ -36,7 +58,10 @@ public class Snowflake {
 			
 			// #13. set the pen color to red for all odd numbers of i
 			
-			
+		for (int j = 0; j < 6; j++) {
+			robot.turn(-60);
+			robot.move(50);
+		}
 			// #9. Use a for loop to do everything (#10, #11) 6 times ( use j as a counter )
 			
 			
@@ -48,8 +73,9 @@ public class Snowflake {
 				
 			
 			// #14. set the pen color to black
+	}
 				
 		
 	}
 
-}
+
