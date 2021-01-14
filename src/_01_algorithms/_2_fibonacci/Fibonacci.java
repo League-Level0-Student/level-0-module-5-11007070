@@ -12,6 +12,7 @@ public static void main(String[] args) {
 		System.out.println(sum);
 		number1 = number2;
 		number2 = sum;
+		//to save
 	}
 }
 }
