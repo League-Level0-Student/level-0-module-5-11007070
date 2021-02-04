@@ -48,13 +48,30 @@ public static void main(String[] args) {
 		year = year + 1;
 	} */ 
 	
-	//nested for loop
+	//nested for loop #1
 	/* for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
 			System.out.println(i + " " + j);
 		}
 	} */
 	
+	//display all numbers from 1-9 in a 3x3 grid
+	/* for (int i = 1; i < 8; i+=3) {
+		System.out.print(i + " ");
+		 for (int j = i + 1; j < i+2; j++) {
+			int a = j + 1;
+			 System.out.print(j + " " + a + " "); 
+		}
+		 System.out.println();
+	} */
 	
+	//display all numbers from 1-100 in a 10x10 grid
+	for (int i = 1; i < 100; i+=10) {
+		System.out.print(i + " ");
+		for (int j = i + 1; j < i+10; j++) { 
+			System.out.print(j + " ");
+		}
+		System.out.println();
+	}
 	}
 }
