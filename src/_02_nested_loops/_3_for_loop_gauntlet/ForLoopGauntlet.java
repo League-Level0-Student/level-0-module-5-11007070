@@ -66,12 +66,34 @@ public static void main(String[] args) {
 	} */
 	
 	//display all numbers from 1-100 in a 10x10 grid
-	for (int i = 1; i < 100; i+=10) {
+	/* for (int i = 1; i < 100; i+=10) {
 		System.out.print(i + " ");
 		for (int j = i + 1; j < i+10; j++) { 
 			System.out.print(j + " ");
 		}
-		System.out.println();
+		System.out.println(); */
+	
+	//display stars pyramid 
+	String star = "* ";
+	for (int i = 1; i < 7; i++) {
+		System.out.println(star);
+		for( int j = 0; j < 1; j++) {
+			star = star + "* ";
+		}
 	}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
